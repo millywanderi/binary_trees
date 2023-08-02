@@ -98,7 +98,7 @@ int binary_tree_is_avl(const binary_tree_t *tree)
 	if (recurse_bst(tree, INT_MIN, INT_MAX) == 1)
 	{
 		/* check balance factor */
-		balance = recurse_balance(tree);
+		balance = binary_tree_balance(tree);
 		if (balance == 0)
 			return (1);
 	}
